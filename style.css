@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+img,
+a,
+span,
+button {
+  display: inline-block;
+}
+body {
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--LightGray);
+}
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+.container main {
+  display: grid;
+  margin: 0 auto;
+  max-width: 60%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45% 55%;
+}
+.container main .join-wrapper {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 2rem;
+}
+.container main .join-wrapper h1 {
+  font-size: 1.3rem;
+  color: var(--Cyan);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.container main .join-wrapper h2 {
+  color: var(--BrightYellow);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.container main .join-wrapper p {
+  color: var(--GrayishBlue);
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container main .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container main .bottom .subscription-wrapper {
+  background-color: var(--Cyan);
+  border-radius: 0 0 0 10px;
+  padding: 2rem;
+  display: grid;
+  column-gap: 0.7rem;
+  color: var(--LightGray);
+}
+.container main .bottom .subscription-wrapper h3 {
+  font-size: 1.1rem;
+}
+.container main .bottom .subscription-wrapper .pricing {
+  display: flex;
+  align-items: center;
+  color: hsla(204, 43%, 93%, 0.4);
+}
+.container main .bottom .subscription-wrapper .pricing span {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-right: 10px;
+  color: var(--LightGray);
+}
+.container main .bottom .subscription-wrapper p {
+  font-size: 0.9rem;
+  padding-bottom: 15px;
+}
+.container main .bottom .subscription-wrapper a {
+  background-color: var(--BrightYellow);
+  color: var(--LightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding-block: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container main .bottom .why-wrapper {
+  background-color: hsla(179, 62%, 43%, 0.8);
+  border-radius: 0 0 10px 0;
+  padding: 2rem;
+}
+.container main .bottom .why-wrapper h3 {
+  color: var(--LightGray);
+  padding-bottom: 1rem;
+}
+.container main .bottom .why-wrapper ul li {
+  color: hsla(204, 43%, 93%, 0.7);
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 425px) {
+  .container main {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .container main .bottom .why-wrapper {
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+  }
+  .container main .bottom .why-wrapper h3 {
+    font-size: 1rem;
+  }
+  .container main .bottom .why-wrapper ul {
+    padding-bottom: 4rem;
+  }
+  .container main .bottom .why-wrapper ul li {
+    font-size: 0.7rem;
+  }
+  .container main .bottom .subscription-wrapper {
+    border-radius: 0;
+    padding: 1rem;
+  }
+  .container main .bottom {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+  .container main .bottom .subscription-wrapper h3 {
+    font-size: 0.9rem;
+  }
+  .container main .bottom .subscription-wrapper .pricing {
+    font-size: 15px;
+  }
+  .container main .bottom .subscription-wrapper .pricing span {
+    font-size: 1.2rem;
+  }
+  .container main .bottom .subscription-wrapper p {
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+  }
+  .container main .bottom .subscription-wrapper a {
+    padding-bottom: 4px;
+    font-size: 15px;
+  }
+  .container main .join-wrapper {
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+  }
+  .container main .join-wrapper h1 {
+    font-size: 1rem;
+  }
+  .container main .join-wrapper h2 {
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+  }
+  .container main .join-wrapper p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+}
